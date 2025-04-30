@@ -29,6 +29,6 @@ async function connectDB() {
 }
 
 module.exports = async (req, res) => {
-  //await connectDB();
+  await connectDB();
   return app(req, res);
 };
