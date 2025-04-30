@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 
 const userRoutes = require("./routes/UserRoutes");
-const bikeRoutes = require("./routes/bikeRoutes");
+const bikeRoutes = require("./routes/BikeRoutes");
 const authRoutes = require("./routes/authRoutes");
 
 dotenv.config();
