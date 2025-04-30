@@ -33,6 +33,6 @@ async function connectDB() {
 }
 
 module.exports = async (req, res) => {
-  await connectDB();
-  return app(req, res); // delegate to Express
+  //await connectDB();
+  return app(req, res);
 };
