@@ -2,10 +2,6 @@ const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 
-const userRoutes = require("./routes/UserRoutes");
-const bikeRoutes = require("./routes/bikeRoutes");
-const authRoutes = require("./routes/authRoutes");
-
 dotenv.config();
 
 const app = express();
@@ -14,9 +10,7 @@ const app = express();
 app.use(express.json());
 
 // Routes
-app.use("/api/users", userRoutes);
-app.use("/api/bikes", bikeRoutes);
-app.use("/api/auth", authRoutes);
+
 app.get("/", (req, res) => res.send("Hello from Vercel!"));
 
 // Connect to DB *only once when deployed*
